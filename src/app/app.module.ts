@@ -12,20 +12,20 @@ import {ShoppingListService} from './shopping-list/service/shopping-list.service
 import {RecipeService} from './recipes/service/recipe.service';
 import {DataStorageService} from './shared/data-storage.service';
 import {HttpModule} from '@angular/http';
-import {RecipesModule} from './recipes/recipes.module';
 import {SharedModule} from './shared/shared.module';
 import {ShoppingListModule} from './shopping-list/shopping-list.module';
+import {HomeComponent} from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpModule,
-    RecipesModule,
     SharedModule,
     ShoppingListModule,
     AuthModule
