@@ -7,7 +7,8 @@ const appRoutes: Routes = [
   {path: '', component: HomeComponent},
   //  {path: 'recipes', redirectTo: '/recipes', pathMatch: 'full'},
   {path: 'recipes', loadChildren: './recipes/recipes.module#RecipesModule'},
-  {path: 'shopping-list', component: ShoppingListComponent}
+  //  {path: 'shopping-list', component: ShoppingListComponent}
+  {path: 'shopping-list', loadChildren: './shopping-list/shopping-list.module#ShoppingListModule'}
 
 ];
 
